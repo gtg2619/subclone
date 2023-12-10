@@ -1,6 +1,6 @@
 {
   "name": "subclone",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Used to clone files in a subdirectory of github. Suitable for projects built without svn.",
   "main": "index.js",
   "scripts": {
@@ -9,6 +9,11 @@
   "keywords": [
     "git"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gtg2619/subclone"
+  },
+  "bugs": "https://github.com/gtg2619/subclone/issues",
   "author": "gtg2619",
   "license": "MIT",
   "dependencies": {
