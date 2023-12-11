@@ -31,5 +31,5 @@ await subclone("https://github.com/gtg2619/gtg2619.github.io/tree/main/gitbook/i
 ### use in cli
 
 ```
-node .\cli.js https://github.com/gtg2619/gtg2619.github.io/tree/main/gitbook -t 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 -p notgittbook
+subclone -u  https://github.com/gtg2619/gtg2619.github.io/tree/main/gitbook -t xxx_xxxxxxxxxxxxxxxxxxxxxxxxxxxx -p notgit111tbook
 ```

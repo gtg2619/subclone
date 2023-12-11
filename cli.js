@@ -1,6 +1,7 @@
+#!/usr/bin/env node
+
 var argv = require('optimist').argv;
 var subclone = require('./index');
-
 
 (async()=>{
 await subclone(argv.url || argv.u || argv["_"][0] || process.exit(1), {
