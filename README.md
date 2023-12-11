@@ -6,7 +6,9 @@ Repository subdirectory cloning tool based on github api
 
 ## install
 
-TODO
+```bash
+npm i subclone -g
+```
 
 ## usage
 

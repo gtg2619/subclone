@@ -10,7 +10,6 @@ async function getJSON(url, opt){
         "Authorization": `Bearer ${opt.token}`,
         "X-GitHub-Api-Version": "2022-11-28"
     }, ...fetchOpt};
-    console.log(url, fetchOpt);
     return fetch(url, fetchOpt).then(response=>response.json());
 }
 
