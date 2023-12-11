@@ -15,7 +15,7 @@ npm i subclone -g
 ### use as module
 
 ```js
-const subclone = require("subclone")
+const subclone = require("subclone");
 
 (async()=>{
 // Use complete subdirectory URL which you want download

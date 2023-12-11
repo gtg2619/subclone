@@ -1,6 +1,6 @@
 {
   "name": "subclone",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Used to clone files in a subdirectory of github. Suitable for projects built without svn.",
   "main": "index.js",
   "preferGlobal": true,
