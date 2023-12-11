@@ -6,5 +6,6 @@ function parseURL(url){
     // currently only suitable for tree
     let ref = splited[6] || "main";
     let directory = splited.slice(7).join("/") || "/";
-    return {repo, owner, directory, ref}
+    let subCount = splited.length - 7
+    return {repo, owner, directory, ref, subCount}
 }

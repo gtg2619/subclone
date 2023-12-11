@@ -3,8 +3,9 @@
   "version": "0.1.0",
   "description": "Used to clone files in a subdirectory of github. Suitable for projects built without svn.",
   "main": "index.js",
+  "preferGlobal": true,
   "scripts": {
-    "test": "subclone https://github.com/gtg2619/subclone -o subclone"
+    "subclone": "node cli.js"
   },
   "keywords": [
     "git"
@@ -17,6 +18,7 @@
   "author": "gtg2619",
   "license": "MIT",
   "dependencies": {
-    "node-fetch": "^2.7.0"
+    "node-fetch": "^2.7.0",
+    "optimist": "^0.6.1"
   }
 }
