@@ -33,5 +33,5 @@ await subclone("https://github.com/gtg2619/gtg2619.github.io/tree/main/gitbook/i
 ### use in cli
 
 ```
-subclone -u  https://github.com/gtg2619/gtg2619.github.io/tree/main/gitbook -t xxx_xxxxxxxxxxxxxxxxxxxxxxxxxxxx -p notgit111tbook
+subclone -u https://github.com/sajjadium/ctf-archives/tree/main/ctfs/0CTF/2023/web/ -t xxx_xxxxxxxxxxxxxxxxxxxxxxxxxxxx -p 0CTFwebChalls
 ```

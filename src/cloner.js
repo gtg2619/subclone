@@ -2,7 +2,7 @@ const fetch = require('node-fetch');
 const fs = require("fs");
 
 module.exports.clone = clone;
-
+module.exports.customize = customize;
 async function getJSON(url, opt){
     fetchOpt = {}
     if(opt.token) fetchOpt = {"headers":{
@@ -45,9 +45,8 @@ async function customize(path, customPath, subCount){
 }
 
 async function clone(target, opt){
-    saveDir = await customize(opt.path || target.directory.slice(target.directory.lastIndexOf('/') + 1), opt.customPath, opt.subCount);
-    if (fs.existsSync(saveDir)) throw new Error(`Directory ${saveDir} Existing.`);
-    fs.mkdirSync(saveDir);
+    const saveDir = opt.path;
+    if (!fs.existsSync(saveDir)){ fs.mkdirSync(saveDir); } else {throw new Error(`Directory conflicts while creating ${saveDir}`)}
     let url = "";
     if (typeof target != 'string'){
         url = `https://api.github.com/repos/${target.owner}/${target.repo}/contents/${target.directory}`;

@@ -1,6 +1,5 @@
-const { clone } = require("./cloner");
+const { clone, customize } = require("./cloner");
 const { parseURL } = require("./parser");
-
 
 module.exports = subclone;
 async function subclone(url, opt){
@@ -21,7 +20,7 @@ async function subclone(url, opt){
 
     if(!opt.customPath) opt.customPath = target.owner + '-' + target.repo + '-' + target.ref + '-' + target.directory.replaceAll('/', '-');
     else if(opt.customPath && opt.customPath.endsWith('/')) opt.customPath = opt.customPath.slice(0,opt.customPath.length-1);
-
+    opt.path = await customize(target.directory.slice(target.directory.lastIndexOf('/') + 1), opt.customPath, opt.subCount);
     // began to clone
     let saveDir = await clone(target, opt);
 
